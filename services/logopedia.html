@@ -1,57 +1,96 @@
-<!doctype html><html lang="es"><head>
-<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Logopedia – Centro Voz & Mente</title>
-<link rel="stylesheet" href="../styles.css" />
-</head><body>
-<!-- Header igual (ajusta rutas a ../) -->
-<div class="header-top"><div class="container" style="display:flex;justify-content:space-between;align-items:center;height:40px;"><div><strong>Tel:</strong> +1 (829) 905-8799 · <strong>Email:</strong> mtolentino41@uasd.edu.do</div><div class="show-md"><span class="badge">RD · Sto. Domingo</span></div></div></div>
-<header class="header-main"><div class="container nav">
-  <a href="../index.html"><img src="../images/inicio/logo-empresa.png" alt="Logo" class="logo"
-     onerror="this.src='https://via.placeholder.com/160x48?text=Logo';" /></a>
-  <nav class="show-md" style="gap:.25rem;">
-    <a href="../index.html">Inicio</a>
-    <a href="../about.html">Sobre nosotros</a>
-    <span class="dropdown" id="services"><a href="#">Servicios ▾</a>
-      <span class="dropdown-menu hidden" id="servicesMenu">
-        <a href="./logopedia.html" class="active">Logopedia</a>
-        <a href="./psicologia.html">Psicología</a>
-      </span>
-    </span>
-    <a href="../blog.html">Blog</a>
-    <a href="../contact.html">Contacto</a>
-  </nav>
-  <button id="menuBtn" class="menu-btn">☰</button>
-</div><div id="mobilePanel" class="hidden"><div class="container" style="display:grid;gap:.5rem;"><a href="../index.html">Inicio</a><a href="../about.html">Sobre</a><a href="./logopedia.html">Logopedia</a><a href="./psicologia.html">Psicología</a><a href="../blog.html">Blog</a><a href="../contact.html">Contacto</a></div></div></header>
-
-<section class="hero">
-  <div class="container" style="text-align:center;">
-    <img src="../images/servicios/logopedia/hero-logopedia.jpg" alt="Logopedia"
-         style="width:100%;max-height:420px;object-fit:cover;border-radius:1rem;border:4px solid rgba(255,255,255,.3);"
-         onerror="this.src='https://via.placeholder.com/1600x500?text=Logopedia';" />
-    <h1 style="margin-top:1rem;">Logopedia</h1>
-    <p class="tagline">Dando voz a cada historia.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2>Nuestros Servicios de Logopedia</h2>
-    <p class="muted">Prevenir, evaluar, diagnosticar y tratar trastornos de comunicación.</p>
-    <div class="grid grid-3" style="margin-top:1rem;">
-      <div class="card"><h4>Evaluación y Diagnóstico</h4><p>Análisis exhaustivo para identificar origen y alcance.</p></div>
-      <div class="card"><h4>Terapia del Habla</h4><p>Articulación, fluidez (tartamudez) y producción de sonidos.</p></div>
-      <div class="card"><h4>Terapia del Lenguaje</h4><p>Comprensión y expresión del lenguaje oral y escrito.</p></div>
-      <div class="card"><h4>Terapia de la Voz</h4><p>Rehabilitación de disfonías (calidad, tono y volumen).</p></div>
-      <div class="card"><h4>Tratamiento de la Deglución</h4><p>Disfagia y trastornos de la alimentación y deglución.</p></div>
-      <div class="card"><h4>Terapia Miofuncional</h4><p>Desequilibrios orofaciales que afectan habla y deglución.</p></div>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logopedia – Centro Voz & Mente</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="header-top">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;height:40px;">
+      <div><strong>Tel:</strong> +1 (829) 905-8799 · <strong>Email:</strong> mtolentino41@uasd.edu.do</div>
+      <div class="show-md"><span class="badge">RD · Sto. Domingo</span></div>
     </div>
   </div>
-</section>
 
-<footer class="footer"><div class="container grid grid-md-2" style="gap:2rem;">
-  <div><img src="../images/inicio/logo-empresa.png" alt="Logo" class="logo" onerror="this.src='https://via.placeholder.com/160x48?text=Logo';" />
-  <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p></div>
-  <div><h4>Contacto</h4><p>Calle Ejemplo #123, Santo Domingo, RD</p><p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p><hr class="soft" /><small>© <span id="y"></span> Centro Voz & Mente.</small></div>
-</div></footer>
-<script src="../script.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body></html>
+  <!-- Header -->
+  <header class="header-main">
+    <div class="container nav">
+      <a href="../index.html">
+        <img src="../images/inicio/logo-empresa.png" alt="Logo" class="logo"
+             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+      </a>
+      <nav class="show-md" style="gap:.25rem;">
+        <a href="../index.html">Inicio</a>
+        <a href="../about.html">Sobre nosotros</a>
+        <span class="dropdown" id="services">
+          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+          <span class="dropdown-menu hidden" id="servicesMenu">
+            <a href="./logopedia.html" class="active">Logopedia</a>
+            <a href="./psicologia.html">Psicología</a>
+          </span>
+        </span>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+    <div id="mobilePanel" class="hidden">
+      <div class="container" style="display:grid;gap:.5rem;">
+        <a href="../index.html">Inicio</a>
+        <a href="../about.html">Sobre nosotros</a>
+        <a href="./logopedia.html">Logopedia</a>
+        <a href="./psicologia.html">Psicología</a>
+        <a href="../blog.html">Blog</a>
+        <a href="../contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container" style="text-align:center;">
+      <img src="../images/servicios/logopedia/hero-logopedia.jpg" alt="Logopedia"
+           class="hero-image hero-image--tall"
+           onerror="this.src='https://via.placeholder.com/1600x500?text=Logopedia';" />
+      <h1 style="margin-top:1rem;">Logopedia</h1>
+      <p class="muted" style="color:#e5e7eb;">Dando voz a cada historia.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Nuestros Servicios de Logopedia</h2>
+      <p class="muted">Prevenir, evaluar, diagnosticar y tratar trastornos de comunicación.</p>
+      <div class="grid grid-3" style="margin-top:1rem;">
+        <div class="card"><h4>Evaluación y Diagnóstico</h4><p>Análisis exhaustivo para identificar origen y alcance.</p></div>
+        <div class="card"><h4>Terapia del Habla</h4><p>Articulación, fluidez (tartamudez) y producción de sonidos.</p></div>
+        <div class="card"><h4>Terapia del Lenguaje</h4><p>Comprensión y expresión del lenguaje oral y escrito.</p></div>
+        <div class="card"><h4>Terapia de la Voz</h4><p>Rehabilitación de disfonías (calidad, tono y volumen).</p></div>
+        <div class="card"><h4>Tratamiento de la Deglución</h4><p>Disfagia y trastornos de la alimentación y deglución.</p></div>
+        <div class="card"><h4>Terapia Miofuncional</h4><p>Desequilibrios orofaciales que afectan habla y deglución.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-md-2" style="gap:2rem;">
+      <div>
+        <img src="../images/inicio/logo-empresa.png" alt="Logo" class="logo logo--footer"
+             onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
+        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Calle Ejemplo #123, Santo Domingo, RD</p>
+        <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
+        <hr class="soft" />
+        <small>© <span id="y"></span> Centro Voz & Mente.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
