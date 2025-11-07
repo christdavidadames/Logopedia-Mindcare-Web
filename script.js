@@ -36,17 +36,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Rutas de tus imágenes (en ./images/inicio/)
   const slides = [
     './images/inicio/logopedia-inicio-1.jpg',
+    './images/inicio/psicologia-inicio-1.jpg',
     './images/inicio/logopedia-inicio-2.jpg',
-    './images/inicio/logopedia-inicio-3.jpg'
+    './images/inicio/psicologia-inicio-2.jpg'
   ];
 
   // Frases (mismo orden y cantidad que las imágenes)
   const captions = [
     'La vida',
+    'Paz',
     'El amor',
     'La salud'
   ];
-
+  const alts = [
+    'Logopedia inicio 1',
+    'Psicología inicio 1',
+    'Logopedia inicio 2',
+    'Psicología inicio 2',
+  ];
   // Pre-cargar imágenes
   slides.forEach(src => { const im = new Image(); im.src = src; });
 
@@ -77,3 +84,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Cambio automático
   setInterval(nextSlide, DURATION);
 });
+
