@@ -30,13 +30,14 @@ a:hover { text-decoration: underline; }
 /* Logo con eslogan (columna izquierda del hero) */
 .logo-eslogan {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
   display: block;
   margin: 0;                /* sin desplazamientos negativos */
   border-radius: 1rem;
   border: none;
   box-shadow: none;
+  margin-left: -180px
 }
 
 /* Imagen estática antigua (fuera del hero animado) */
@@ -151,4 +152,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
     animation: none;
   }
 }
+
 
