@@ -27,24 +27,26 @@ a:hover { text-decoration: underline; }
 
 .hero { color: #fff; padding: 3rem 0; background: linear-gradient(90deg, var(--blue), var(--teal)); }
 
-/* Si en algún momento vuelves a mostrar el logo con eslogan en el hero */
+/* Logo con eslogan (columna izquierda del hero) */
 .logo-eslogan {
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
   height: auto;
+  display: block;
+  margin: 0;                /* sin desplazamientos negativos */
   border-radius: 1rem;
   border: none;
   box-shadow: none;
-  margin-left: -180px;
 }
 
-/* Estilo anterior de la imagen estática (ya no se usa en el hero animado) */
+/* Imagen estática antigua (fuera del hero animado) */
 .logopedia-inicio {
-  max-height: 450px;    /* tope de alto si la foto es muy grande */
+  max-height: 450px;
   object-fit: cover;
-  margin-left: -200px
+  margin-left: -200px;      /* se neutraliza dentro del hero animado */
 }
 
+/* Utilidades de grid */
 .grid { display: grid; gap: 1rem; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
@@ -53,6 +55,11 @@ a:hover { text-decoration: underline; }
   .grid-md-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
 
+/* Alineación hero en dos columnas */
+.hero-left  { justify-self: start;  align-self: center; }
+.hero-right { justify-self: end;    }
+
+/* Tarjetas y secciones */
 .card { background:#fff; border:1px solid #e5e7eb; border-radius:1rem; padding:1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
 .section { padding: 3rem 0; }
 .muted { color: var(--muted); }
@@ -87,6 +94,12 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
   max-height: 420px;             /* controla la altura del hero */
+}
+
+/* Pequeño empuje hacia la derecha del carrusel */
+.hero-visual--shift { margin-left: 12px; }
+@media (min-width: 1024px) {
+  .hero-visual--shift { margin-left: 24px; }
 }
 
 /* La imagen dentro del hero animado */
