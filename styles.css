@@ -42,7 +42,7 @@ a:hover { text-decoration: underline; }
 .nav a.active, .nav a:hover { color: var(--blue); }
 
 .logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -200px }
-.logo--footer { height: 160px; width: auto; margin-right: 200px; }   /* footer */
+.logo--footer { height: 200px; width: auto; margin-right: 200px; }   /* footer */
 
 .badge {
   display:inline-block;
@@ -226,3 +226,4 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: inline-flex;
   align-items: center;
 }
+
