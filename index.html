@@ -17,37 +17,31 @@
 
   <!-- Header / Nav -->
   <header class="header-main">
-    <div class="container nav">
-      <a href="./index.html">
-        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
-             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
-      </a>
-      <nav class="show-md" style="gap:.25rem;">
-        <a href="./index.html" class="active">Inicio</a>
-        <a href="./about.html">Sobre nosotros</a>
-        <span class="dropdown" id="services">
-          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
-          <span class="dropdown-menu hidden" id="servicesMenu">
-            <a href="./services/logopedia.html">Logopedia</a>
-            <a href="./services/psicologia.html">Psicología</a>
-          </span>
+  <div class="container nav">
+    <a href="./index.html">
+      <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
+           onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+    </a>
+
+    <nav class="show-md" style="gap:.25rem;">
+      <a href="./index.html" class="active">Inicio</a>
+      <a href="./about.html">Sobre nosotros</a>
+
+      <!-- Dropdown Servicios -->
+      <span class="dropdown" id="services">
+        <a href="#" id="servicesToggle" aria-haspopup="true" aria-expanded="false">Servicios ▾</a>
+        <span class="dropdown-menu hidden" id="servicesMenu">
+          <a href="./services/logopedia.html">Logopedia</a>
+          <a href="./services/psicologia.html">Psicología</a>
         </span>
-        <a href="./blog.html">Blog</a>
-        <a href="./contact.html">Contacto</a>
-      </nav>
-      <button id="menuBtn" class="menu-btn" aria-label="Menú">☰</button>
-    </div>
-    <div id="mobilePanel" class="hidden">
-      <div class="container" style="display:grid;gap:.5rem;">
-        <a href="./index.html">Inicio</a>
-        <a href="./about.html">Sobre nosotros</a>
-        <a href="./services/logopedia.html">Logopedia</a>
-        <a href="./services/psicologia.html">Psicología</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./contact.html">Contacto</a>
-      </div>
-    </div>
-  </header>
+      </span>
+
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Hero -->
   <section class="hero">
@@ -131,3 +125,4 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
