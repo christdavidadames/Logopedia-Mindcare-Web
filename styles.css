@@ -140,14 +140,15 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 /* Dropdown base */
 .dropdown { position: relative; }
 .dropdown-menu {
-  position:absolute;
-  top:100%;
-  left:0;
-  background:#fff;
-  border:1px solid #e5e7eb;
-  border-radius:.5rem;
-  min-width:180px;
-  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--blue);          /* 🔹 Fondo azul marino */
+  border: 1px solid #1e3a8a;        /* mismo azul para borde */
+  border-radius: .5rem;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  z-index: 1000;        
 }
 .dropdown-menu a {
   display:block;
@@ -237,4 +238,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: inline-flex;
   align-items: center;
 }
+
 
