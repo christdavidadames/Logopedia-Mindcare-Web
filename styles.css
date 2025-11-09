@@ -151,9 +151,11 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   z-index: 1000;        
 }
 .dropdown-menu a {
-  display:block;
-  padding:.5rem .75rem;
-  color:var(--text);
+ display: block;
+  padding: .5rem .75rem;
+  color: #fff;
+  background: transparent;          /* 🔹 sin fondo blanco por defecto */
+  text-decoration: none;
 }
 .dropdown-menu a:hover { background:#f3f4f6; color:var(--blue); }
 
@@ -238,5 +240,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: inline-flex;
   align-items: center;
 }
+
 
 
