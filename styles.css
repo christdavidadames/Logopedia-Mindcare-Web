@@ -157,7 +157,13 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background: transparent;          /* 🔹 sin fondo blanco por defecto */
   text-decoration: none;
 }
-.dropdown-menu a:hover { background:#f3f4f6; color:var(--blue); }
+.dropdown-menu a:hover,
+.dropdown-menu a:focus,
+.dropdown-menu a:active {
+  background: #274aa7;              /* 🔹 azul un poco más claro */
+  color: #d1fae5;                   /* verde menta claro opcional */
+  outline: none;                    /* elimina el borde de enfoque */
+}
 
 /* ========================================================= */
 /* ========== HERO ANIMADO: imagen rotando + texto ========== */
@@ -240,6 +246,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: inline-flex;
   align-items: center;
 }
+
 
 
 
