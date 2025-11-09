@@ -69,7 +69,7 @@ a:hover { text-decoration: underline; }
 }
 
 /* Logo tamaños (mantengo tus valores) */
-.logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -200px }
+.logo--header { height: 150px; width: auto; flex-shrink: 0; margin-left: -300px }
 .logo--footer { height: 200px; width: auto; margin-right: 200px; }
 
 .badge {
@@ -289,3 +289,4 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
