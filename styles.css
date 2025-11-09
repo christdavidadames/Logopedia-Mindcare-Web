@@ -20,14 +20,12 @@ a:hover { text-decoration: underline; }
 .container { max-width: var(--max); margin: 0 auto; padding: 1rem; }
 
 /* ------------------- TOP BAR + HEADER ------------------- */
-/* Top bar: azul sólido */
 .header-top {
   background: var(--blue);
   color: #fff;
   font-size: 0.875rem;
 }
 
-/* Header principal: azul sólido */
 .header-main {
   position: sticky;
   top: 0;
@@ -49,7 +47,7 @@ a:hover { text-decoration: underline; }
 .header-main .nav a.active,
 .header-main .nav a:hover { 
   color: #fff; 
-  text-decoration: underline; /* para notar hover */
+  text-decoration: underline;
 }
 
 /* Logo tamaños (mantengo tus valores) */
@@ -67,7 +65,6 @@ a:hover { text-decoration: underline; }
 }
 
 /* ------------------- HERO PRINCIPAL ------------------- */
-/* Degradado vertical: azul (arriba) -> menta (abajo) */
 .hero {
   color: #fff;
   background: linear-gradient(180deg, var(--blue), var(--teal));
@@ -77,7 +74,6 @@ a:hover { text-decoration: underline; }
   overflow: hidden;
 }
 
-/* Logo con eslogan */
 .logo-eslogan {
   width: 100%;
   max-width: 800px;
@@ -120,7 +116,6 @@ a:hover { text-decoration: underline; }
 .btn:hover { background:#274aa7; text-decoration:none; }
 
 /* ------------------- FOOTER ------------------- */
-/* Degradado vertical: azul (arriba) -> menta (abajo) */
 .footer {
   color:#fff;
   background: linear-gradient(180deg, var(--blue), var(--teal));
@@ -143,7 +138,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   position:absolute;
   top:100%;
   left:0;
-  background: var(--blue);       /* fondo azul */
+  background: var(--blue);
   border:1px solid #1e3a8a;
   border-radius:.5rem;
   min-width:180px;
@@ -153,15 +148,15 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 .dropdown-menu a {
   display:block;
   padding:.5rem .75rem;
-  color:#fff;                    /* texto blanco */
+  color:#fff;
   background: transparent;
   text-decoration: none;
 }
 .dropdown-menu a:hover,
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
-  background:#274aa7;            /* azul más claro */
-  color:#d1fae5;                 /* menta claro opcional */
+  background:#274aa7;
+  color:#d1fae5;
   outline: none;
 }
 
@@ -180,7 +175,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   margin-left: -200px;
 }
 
-/* Imagen dentro del carrusel */
 .hero-visual .logopedia-inicio {
   width: 120%;
   height: 100%;
@@ -189,7 +183,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   display: block;
 }
 
-/* Texto centrado sobre la imagen */
 .hero-caption {
   position: absolute;
   inset: 0;
@@ -204,7 +197,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25));
 }
 
-/* Animaciones */
 @keyframes slideInLeft {
   from { opacity: 0; transform: translateX(-28px); }
   to   { opacity: 1; transform: translateX(0); }
@@ -224,30 +216,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 
 /* ========================================================= */
-/* ========== AJUSTES DE MENÚ Y ALINEACIÓN ========== */
-/* ========================================================= */
-
-/* Si usas menú móvil, cámbialo aquí; por ahora lo oculto (como tenías) */
-.menu-btn { display: none !important; }
-
-/* Normaliza altura y alineación de los items del menú */
-.nav a,
-.dropdown > a {
-  display: inline-flex;
-  align-items: center;
-  height: 48px;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-/* El contenedor del dropdown también centrado verticalmente */
-.dropdown {
-  display: inline-flex;
-  align-items: center;
-}
-
-/* ========================================================= */
-/* ========== ABOUT: Misión/Visión/Valores ========== */
+/* ========== ABOUT: Misión/Visión/Valores en CUADROS ======= */
 /* ========================================================= */
 
 .about-grid {
@@ -255,37 +224,31 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   gap: 1rem;
 }
 @media (min-width: 768px) {
-  .about-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+  .about-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-.info-block {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 1rem;
-  padding: 1.25rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,.04);
-  position: relative;
-  text-align: left;
-}
+
+/* usamos las .card existentes como “cuadrados” */
 .info-block h3 { margin-top: .5rem; }
 
-/* La tarjeta de "Valores" ocupa todo el ancho abajo */
-.info-block.wide { grid-column: 1 / -1; }
+/* Valores ocupa todo el ancho y es un poco más grande */
+.card--wide {
+  grid-column: 1 / -1;
+  padding: 1.5rem;             /* un poco más amplio */
+}
 
-/* Icono superior centrado con aro de color */
+/* Icono circular superior dentro del cuadro */
 .block-icon {
-  --ring-color: var(--blue);      /* por defecto */
-  width: 74px;
-  height: 74px;
-  margin: 0 auto .5rem;
+  --ring-color: var(--blue);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto .75rem;
   border-radius: 50%;
   background: #fff;
-  border: 4px solid var(--ring-color); /* aro de color */
+  border: 4px solid var(--ring-color);
   box-shadow: 0 1px 6px rgba(0,0,0,.06);
   display: grid;
   place-items: center;
-  overflow: hidden;               /* recorta la imagen en círculo */
+  overflow: hidden;           /* recorta imagen en círculo */
 }
 .block-icon img {
   width: 70%;
@@ -293,7 +256,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   object-fit: contain;
 }
 
-/* Colores de aro por bloque */
+/* Colores del aro */
 .ring-blue   { --ring-color: var(--blue); }
 .ring-teal   { --ring-color: var(--teal); }
 .ring-yellow { --ring-color: #facc15; }   /* amarillo suave */
