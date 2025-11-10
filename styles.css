@@ -306,7 +306,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 .values-list strong { color: var(--blue); }
 
 .about-title {
-  color: #1e3a8a;  
-  padding: 1.5rem;       
+  color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
