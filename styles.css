@@ -46,23 +46,28 @@ a:hover { text-decoration: underline; }
 .nav nav { margin-left: 27rem; } /* (mantengo tu ajuste original) */
 .nav a { font-weight: 500; padding: .5rem .75rem; border-radius: .375rem; }
 
-/* 🔧 Alineación perfecta del botón "Servicios" con el resto */
-.nav a,
-.dropdown > a {
+/* 🔧 Alineación perfecta del botón "Servicios" con el resto (solo en el header) */
+.header-main .nav a,
+.header-main .nav .dropdown {
   display: inline-flex;
-  align-items: center;     /* centra verticalmente el texto */
-  justify-content: center;
-  height: 48px;            /* misma altura para todos los botones */
-  line-height: 1;          /* evita variaciones por tipografía */
-  vertical-align: middle;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.dropdown {
-  display: inline-flex;    /* asegura el mismo comportamiento que los <a> */
   align-items: center;
-  justify-content: center;
+  height: 48px;
+  vertical-align: middle;
 }
+
+/* Texto del botón “Servicios” */
+.header-main .nav .dropdown > a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  padding: .5rem .75rem;   /* igual que tus otros <a> del menú */
+}
+
+/* Micro-ajuste si lo ves 1–2px arriba/abajo */
+.header-main .nav .dropdown {
+  transform: translateY(1px);  /* prueba 0, 1 o 2 */
+}
+
 
 /* En el header azul, links blancos y activo/hover también blanco */
 .header-main .nav a { color: #fff; }
@@ -358,17 +363,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
