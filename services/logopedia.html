@@ -15,43 +15,48 @@
   </div>
 
   <!-- Header -->
-  <header class="header-main">
-    <div class="container nav">
-      <a href="../index.html">
-        <img src="../images/inicio/logo-empresa.png" alt="Logo Logopedia Mindcare" class="logo--header"
-             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
-      </a>
-      <nav class="show-md" style="gap:.25rem;">
-        <a href="../index.html">Inicio</a>
-        <a href="../about.html">Nosotros</a>
-        <span class="dropdown" id="services">
-          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
-          <span class="dropdown-menu hidden" id="servicesMenu">
-            <a href="./logopedia.html" class="active">Logopedia</a>
-            <a href="./psicologia.html">Psicología</a>
-          </span>
+  <!-- Header -->
+<header class="header-main">
+  <div class="container nav">
+    <a href="../index.html">
+      <img src="../images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
+           onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+    </a>
+    <nav class="show-md" style="gap:.25rem;">
+      <a href="../index.html">Inicio</a>
+      <a href="../about.html">Nosotros</a>
+      <span class="dropdown" id="services">
+        <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+        <span class="dropdown-menu hidden" id="servicesMenu">
+          <a href="./logopedia.html">Logopedia</a>
+          <a href="./psicologia.html">Psicología</a>
         </span>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contacto</a>
-      </nav>
-      <button id="menuBtn" class="menu-btn">☰</button>
+      </span>
+      <a href="../blog.html">Blog</a>
+      <a href="../events.html">Eventos</a>
+      <a href="../multimedia.html">Multimedia</a>
+      <a href="../contact.html">Contacto</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </div>
+  <div id="mobilePanel" class="hidden">
+    <div class="container" style="display:grid;gap:.5rem;">
+      <a href="../index.html">Inicio</a>
+      <a href="../about.html">Sobre nosotros</a>
+      <a href="./logopedia.html">Logopedia</a>
+      <a href="./psicologia.html">Psicología</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../events.html">Eventos</a>
+      <a href="../multimedia.html">Multimedia</a>
+      <a href="../contact.html">Contacto</a>
     </div>
-    <div id="mobilePanel" class="hidden">
-      <div class="container" style="display:grid;gap:.5rem;">
-        <a href="../index.html">Inicio</a>
-        <a href="../about.html">Sobre nosotros</a>
-        <a href="./logopedia.html">Logopedia</a>
-        <a href="./psicologia.html">Psicología</a>
-        <a href="../blog.html">Blog</a>
-        <a href="../contact.html">Contacto</a>
-      </div>
-    </div>
-  </header>
+  </div>
+</header>
 
   <section class="hero">
     <div class="container" style="text-align:center;">
       <img src="../images/services/hero-logopedia.jpg" alt="Logopedia"
-           class="hero-logopedia"
+           class="hero-image hero-image--tall"
            onerror="this.src='https://via.placeholder.com/1600x500?text=Logopedia';" />
       <h1 style="margin-top:1rem;">Logopedia</h1>
       <p class="muted" style="color:#e5e7eb;">Dando voz a cada historia.</p>
@@ -94,11 +99,3 @@
   <script src="../script.js"></script><script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
