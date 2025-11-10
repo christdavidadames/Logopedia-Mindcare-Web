@@ -257,6 +257,13 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   gap: 2rem;
 }
 .values-list {
+  list-style-position: inside;   /* hace que los puntos cuenten dentro del bloque */
+  text-align: center;            /* centra el contenido */
+  padding-left: 0;               /* elimina espacio extra del lado izquierdo */
+  margin: 0 auto;
+}
+.values-list li {
+  display: list-item;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -354,6 +361,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
 
 
