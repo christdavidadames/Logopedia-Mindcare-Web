@@ -254,7 +254,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 
 .about-grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 @media (min-width: 768px) {
   .about-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -311,5 +311,6 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
+
 
 
