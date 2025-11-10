@@ -216,8 +216,9 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-left: 0;
+  object-position: center;
   display: block;
+  margin: 0;
 }
 
 .hero-caption {
@@ -308,6 +309,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
