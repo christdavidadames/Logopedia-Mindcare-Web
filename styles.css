@@ -194,7 +194,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 
 .hero-visual { 
   position: relative; 
-  width: 175%;                 
+  width: 185%;                 
   aspect-ratio: 16 / 9;        
   height: auto;                
   border-radius: 1rem; 
@@ -284,7 +284,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   overflow: hidden;           /* recorta imagen en círculo */
 }
 .block-icon img {
-  width: 145%;
+  width: 148%;
   height: 100%;
   object-fit: contain;
 }
@@ -304,6 +304,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 }
 .values-list li { color: var(--text); }
 .values-list strong { color: var(--blue); }
+
 
 
 
