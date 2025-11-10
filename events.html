@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eventos – Logopedia MindCare</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="header-top">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;height:40px;">
+      <div><strong>Tel:</strong> +1 (829) 905-8799 · <strong>Email:</strong> mtolentino41@uasd.edu.do</div>
+      <div class="show-md"><span class="badge">RD · Sto. Domingo</span></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header-main">
+    <div class="container nav">
+      <a href="./index.html">
+        <img src="./images/inicio/logo-empresa.png" alt="Logo Logopedia MindCare" class="logo--header"
+             onerror="this.src='https://via.placeholder.com/160x64?text=Logo';" />
+      </a>
+      <nav class="show-md" style="gap:.25rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Nosotros</a>
+        <span class="dropdown" id="services">
+          <a href="#" id="servicesToggle" aria-haspopup="true">Servicios ▾</a>
+          <span class="dropdown-menu hidden" id="servicesMenu">
+            <a href="./services/logopedia.html">Logopedia</a>
+            <a href="./services/psicologia.html">Psicología</a>
+          </span>
+        </span>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+    <div id="mobilePanel" class="hidden">
+      <div class="container" style="display:grid;gap:.5rem;">
+        <a href="./index.html">Inicio</a>
+        <a href="./about.html">Sobre nosotros</a>
+        <a href="./services/logopedia.html">Logopedia</a>
+        <a href="./services/psicologia.html">Psicología</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container" style="text-align:center;">
+      <img src="./images/eventos/hero-eventos.jpg" alt="Eventos"
+           class="hero-image hero-image--tall"
+           onerror="this.src='https://via.placeholder.com/1600x500?text=Eventos';" />
+      <h1 style="margin-top:1rem;">Nuestros Eventos</h1>
+      <p class="muted" style="color:#e5e7eb;">Talleres, charlas y actividades comunitarias.</p>
+    </div>
+  </section>
+
+  <!-- Grid de eventos -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3" style="gap:1.25rem;">
+        <div class="card">
+          <img src="./images/eventos/evento-1.jpg" alt="Taller de Estimulación del Lenguaje"
+               onerror="this.src='https://via.placeholder.com/800x450?text=Evento';" style="width:100%;border-radius:12px;" />
+          <p class="muted" style="margin:.5rem 0 0;">Junio 2024</p>
+          <h4 style="margin:.25rem 0 0;">Taller de Estimulación del Lenguaje</h4>
+        </div>
+        <div class="card">
+          <img src="./images/eventos/evento-2.jpg" alt="Charla sobre Salud Mental en la Oficina"
+               onerror="this.src='https://via.placeholder.com/800x450?text=Evento';" style="width:100%;border-radius:12px;" />
+          <p class="muted" style="margin:.5rem 0 0;">Mayo 2024</p>
+          <h4 style="margin:.25rem 0 0;">Charla sobre Salud Mental en la Oficina</h4>
+        </div>
+        <div class="card">
+          <img src="./images/eventos/evento-3.jpg" alt="Jornada de Puertas Abiertas"
+               onerror="this.src='https://via.placeholder.com/800x450?text=Evento';" style="width:100%;border-radius:12px;" />
+          <p class="muted" style="margin:.5rem 0 0;">Marzo 2024</p>
+          <h4 style="margin:.25rem 0 0;">Jornada de Puertas Abiertas</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container grid grid-md-2" style="gap:2rem;">
+      <div>
+        <img src="./images/inicio/Logo-empresa-footer.png" alt="Logo" class="logo logo--footer"
+             onerror="this.src='https://via.placeholder.com/160x56?text=Logo';" />
+        <p class="muted" style="color:#e5e7eb;">Mejorando comunicación y bienestar emocional.</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>Calle Ejemplo #123, Santo Domingo, RD</p>
+        <p><a href="tel:+18299058799">+1 (829) 905-8799</a> · <a href="mailto:mtolentino41@uasd.edu.do">mtolentino41@uasd.edu.do</a></p>
+        <hr class="soft" />
+        <small>© <span id="y"></span> Logopedia MindCare. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
