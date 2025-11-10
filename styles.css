@@ -272,7 +272,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 .block-icon {
   width: 130px;          
   height: auto;           
-  margin: center 1rem;    
+  margin: 0 auto 1rem;    
   display: block;         
   text-align: center;     
 }
@@ -303,9 +303,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
-
-
-
-
-
-
