@@ -51,7 +51,7 @@ a:hover { text-decoration: underline; }
 .header-main .nav .dropdown {
   display: inline-flex;
   align-items: center;
-  height: 46px;
+  height: 30px;
 }
 
 /* Baja un pelín todo el botón "Servicios" */
@@ -361,4 +361,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
 
