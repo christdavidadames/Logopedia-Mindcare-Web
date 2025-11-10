@@ -311,15 +311,22 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   color: #1e3a8a;        
   border-radius: 0.5rem;     
 }
-hero-psicologia {
-  background: url('../images/services/hero-psicologia.jpg') center/cover no-repeat;
-  color: #fff;
-  height: 600px; /* igual que tu .hero */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.hero-psicologia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  z-index: 0;          /* queda detrás del texto */
 }
+.hero .container {
+  position: relative;
+  z-index: 1;          /* asegura que el texto quede por encima */
+}
+
 .hero-logopedia {
   position: absolute;
   top: 100px;                  
@@ -352,3 +359,4 @@ hero-psicologia {
   padding-bottom: 2rem;
   margin-top: 0;
 }
+
