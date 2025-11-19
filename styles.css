@@ -24,7 +24,7 @@ a:hover { text-decoration: underline; }
 
 /* ------------------- TOP BAR + HEADER ------------------- */
 .header-top {
-  background: var(--blue);
+  background: #fff;
   color: #fff;
   font-size: 0.875rem;
   margin-left: -250px;
@@ -378,4 +378,5 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   background-color: #0b5e5a; /* color más oscuro al pasar el mouse */
   transform: scale(1.05);    /* efecto de “crecer” un poco */
 }
+
 
