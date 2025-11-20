@@ -1,6 +1,6 @@
 :root {
   --blue: #1e3a8a;    /* azul profundo */
-  --teal: #6BCBB8;    /* teal / verde menta */
+  --teal: #0f766e;    /* teal / verde menta */
   --text: #1f2937;    /* gris oscuro */
   --muted: #6b7280;   /* gris medio */
   --bg: #F8F6F2;      /* beige claro */
@@ -379,6 +379,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   transform: scale(1.05);    /* efecto de “crecer” un poco */
   color: #fff;
 }
+
 
 
 
