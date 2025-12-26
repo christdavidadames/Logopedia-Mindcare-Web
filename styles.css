@@ -168,7 +168,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   position:absolute;
   top:100%;
   left:0;
-  background: var(--blue);
+  background: var(--bg);
   border:1px solid #1e3a8a;
   border-radius:.5rem;
   min-width:180px;
@@ -379,6 +379,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   transform: scale(1.05);    /* efecto de “crecer” un poco */
   color: #fff;
 }
+
 
 
 
