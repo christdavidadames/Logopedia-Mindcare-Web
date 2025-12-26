@@ -364,11 +364,11 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
 
 /* ===== Botón verde menta del menú ===== */
 .btn-cita {
-  background-color: var(--blue); /* color verde menta */
+  background-color: var(--muted); 
   color: #fff !important;      
-  font-weight: 600;              /* texto más grueso */
-  padding: .6rem 1rem;           /* tamaño del botón */
-  border-radius: .5rem;          /* bordes redondeados */
+  font-weight: 600;              
+  padding: .6rem 1rem;           
+  border-radius: .5rem;          
   text-decoration: none !important;
   transition: background-color .2s ease, transform .2s ease;
   white-space: nowrap;
@@ -379,17 +379,3 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   transform: scale(1.05);    /* efecto de “crecer” un poco */
   color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
