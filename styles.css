@@ -143,7 +143,7 @@ a:hover { text-decoration: underline; }
   padding:.6rem 1rem;
   border-radius:.5rem;
 }
-.btn:hover { background:#274aa7; text-decoration:none; }
+.btn:hover { background:#fff; text-decoration:none; }
 
 /* ------------------- FOOTER ------------------- */
 .footer {
@@ -379,6 +379,7 @@ hr.soft { border:0; border-top:1px solid #e5e7eb; margin:1.5rem 0; }
   transform: scale(1.05);    /* efecto de “crecer” un poco */
   color: #fff;
 }
+
 
 
 
